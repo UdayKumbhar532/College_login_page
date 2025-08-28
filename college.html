@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskar Engineering College</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: #f4f4f9;
+        color:#333;
+    }
+    /* Header*/
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #0f1111;
+        color:white;
+        padding:15px 40px;
+    }
+    header img{
+        height:60px;
+        width:60px;
+        border-radius:50%;
+        margin-right: 10px;
+    }
+    header h1{
+
+        font-size: 22px;
+        color:#ff9900;
+    }
+    /* <!--Navbar--> */
+    nav{
+        background:#232f3e;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+
+    }
+    nav a{
+        text-decoration: none;
+        color:white;
+        padding:10px 20px;
+        transition: 0.3s;
+    }
+    nav a.hover{
+        background: #37475a;
+        border-radius: 5px;
+    }
+    /* hero Banner*/
+    .hero{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuu0f23cmfwYg8OpUmiLCEFIRFCTSHpobkbg&") no-repeat center center/cover;
+        height:300px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow:2px 2px 5px black;
+    }
+    /* Section*/
+    section{
+        padding: 40px;
+        text-align: center;
+    }
+    section h2{
+        color:#232f2e;
+        margin-bottom: 15px;
+    }
+     
+     section p {
+          max-width: 800;
+          margin: auto;
+          line-height: 1.6;
+     }
+
+     /* Student & College Details*/
+     .details{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top:30px;
+     }
+     .card{
+        background: white;
+        padding: 20px;
+        width:300px;
+        margin: 15px;
+        border-radius:10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+     }
+     .card hover{
+        transform:scale(1.05);
+     }
+     /* login form*/
+     .login {
+        background: white;
+        padding: 20px;
+        width:300px;
+        margin:40px auto;
+        border-radius:10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+     }
+     .login h2 {
+        margin-bottom: 15px;
+        color:#232f2e;
+     }
+     .login input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px sloid #ccc;
+        border-radius:5px;
+     }
+     .login button {
+        width: 100%;
+        padding: 10px;
+        background: #232f2e;
+        color:white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+     }
+     .login button:hover{
+        background: #ff9900;
+     }
+     footer{
+        background: #0f1111;
+        color: white;
+        text-align:center;
+        padding:15px;
+        margin-top: 20px;
+     }
+</style>
+<body>
+    <!--Header-->
+    <header>
+        <div style="display:flex;align-items:center;">
+            <img src="https://www.bec.edu.in/assets/images/jbes_logo.gif" alt="logo">
+          <h1>Bhaskar Engineering College</h1>
+        </div>
+    </header>
+   <!--Navbar-->
+   <nav>
+   <a href="#">Home</a>
+   <a href="#">About</a>
+   <a href="#">Department</a>
+   <a href="#">Admissions</a>
+   <a href="#">Contact</a>
+   </nav>
+   <!--Hero Banner-->
+   <div class="hero">Welcome to Bhaskar Engineering college</div>
+
+   <!--About section-->
+   <section>
+   <h2>About Our College</h2>
+   <p>Bhaskar Engineering College is a premier institution providing quality education and research opportunities. We are committed to shaping young minds into future engineers, innovators, and leaders of tomorrow.</p>
+   </section>
+   <!--details Section-->
+   <section>
+    <h2>Details</h2>
+    <div class="details">
+        <div class="card">
+            <h3>Student Details</h3>
+            <p>Over 5000 students enrolled across various branches of engineering with excellent academic results and placement records.</p>
+        </div>
+        <div class="card">
+        <h3>College Details</h3>
+        <p>
+            Established in 2001, Bhaskar Engineering College offers state-of-the-art labs, digital classrooms, and strong industry collaborations.
+        </p>
+    </div>
+    </div>
+   </section>
+   <!-- Login Section-->
+    <div class="login">
+        <h2>Student Login</h2>
+        <form>
+            <input type="text" placeholder="Enter username" required>
+            <input type="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2025 Bhaskar Engineerinh College | All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>
